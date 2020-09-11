@@ -1,4 +1,6 @@
 fileLogin: test
+server:
+  port: 9012
 eureka:
   client:
     service-url:
