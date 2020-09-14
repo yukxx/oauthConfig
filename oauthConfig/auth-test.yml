@@ -1,0 +1,38 @@
+fileLogin: dev
+server:
+  port: 9021
+eureka:
+  client:
+    service-url:
+      defaultZone: http://yukx:123456@localhost:8761/eureka
+    server:
+      enable-self-preservation: true
+  instance:
+    lease-expiration-duration-in-seconds: 10  #超过多少时间删除服务
+    lease-renewal-interval-in-seconds: 5    #设置心跳时长
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB # 限制文件上传大小
+      max-request-size: 100MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss  # 设置返回日期格式
+    time-zone: GMT+8  # 设置时区
+  redis:
+    database: 0
+    timeout: 10000
+    # Redis服务器地址
+    host: localhost
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password: 123456
+    # 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
