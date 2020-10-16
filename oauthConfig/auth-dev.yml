@@ -1,6 +1,6 @@
 fileLogin: dev
 server:
-  port: 9020
+  port: 9030
 eureka:
   client:
     service-url:
