@@ -36,9 +36,3 @@ spring:
       max-idle: 8
       # 连接池中的最小空闲连接
       min-idle: 0
-  datasource:
-    name: dev
-    url: jdbc:mysql://localhost:3306/docker?nullCatalogMeansCurrent=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useSSL=false
-    username: root
-    password: yukx
-    driver-class-name: com.mysql.cj.jdbc.Driver
