@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://yukx:123456@localhost:8761/eureka
+      defaultZone: http://yukx:123456@yukx-eureka:8762/eureka
     server:
       enable-self-preservation: true
   instance:
@@ -22,7 +22,7 @@ spring:
     database: 0
     timeout: 10000
     # Redis服务器地址
-    host: localhost
+    host: yukx-redis
     # Redis服务器连接端口
     port: 6379
     # Redis服务器连接密码（默认为空）
@@ -36,9 +36,3 @@ spring:
       max-idle: 8
       # 连接池中的最小空闲连接
       min-idle: 0
-  datasource:
-    name: dev
-    url: jdbc:mysql://localhost:3306/docker?nullCatalogMeansCurrent=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true&useSSL=false
-    username: root
-    password: yukx
-    driver-class-name: com.mysql.cj.jdbc.Driver
