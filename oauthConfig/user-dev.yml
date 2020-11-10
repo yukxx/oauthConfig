@@ -1,6 +1,4 @@
-fileLogin: prod
-server:
-  port: 9011
+fileLogin: dev
 eureka:
   client:
     service-url:

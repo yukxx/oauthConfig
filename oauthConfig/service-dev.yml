@@ -40,3 +40,17 @@ spring:
     username: root
     password: yukx
     driver-class-name: com.mysql.cj.jdbc.Driver
+# 设置 mybatis plus 配置文件路径
+mybatis-plus:
+  mapper-locations: classpath*:/mappers/*Mapper.xml
+  #mybatis-plus配置控制台打印完整带参数SQL语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+swagger:
+  enabled: true
+  version: "2.0"
