@@ -51,6 +51,9 @@ feign:
     config:
       default:
         connectTimeout: 5000
+logging:
+  config: classpath:logback-spring.xml
+  path: /data/log/service/
 swagger:
   enabled: true
   version: "2.0"
